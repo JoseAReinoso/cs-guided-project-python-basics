@@ -10,6 +10,10 @@ Examples:
 - num_args(True, False) ➞ 2
 - num_args({}) ➞ 1
 """
-def num_args():
-    # Your code here
 
+##*data will allow multiple arguments to be passed through just through this simple parameter
+def num_args(*data):
+    # Your code here
+    print(len(data)) 
+
+num_args("foo", "bar")

@@ -17,4 +17,33 @@ Examples:
 """
 def XO(txt):
     # Your code here
+    txt_lower = txt.lower() #txt.upper() to make it uppercase
+    return txt_lower.count('x') == txt_lower.count('o')
+
+def X02(txt):
+    #lowercase our txt
+    txt_lower = txt.lower()
+    x_count = 0
+    o_count = 0 
+    # loop over each character and coutn x and o
+    for character in txt_lower:
+        #check if character is x or o
+        if character == "x":
+            x_count += 1
+        elif character == 'o':
+            o_count += 1
+            
+    return  x_count == o_count
+
+              
+
+
+print(XO("ooxx")) #true
+print(XO("xooxx")) #false
+print(XO("ooxXm")) #true
+
+print(X02("ooxx")) #true
+print(X02("xooxx")) #false
+print(X02("ooxXm")) #true
+
 

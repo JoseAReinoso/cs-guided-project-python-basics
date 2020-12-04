@@ -10,4 +10,12 @@ Examples:
 """
 def string_int(txt):
     # Your code here
+    return int(txt)
 
+print(string_int("5"))   
+
+def int_string (num):
+    return str(num)
+
+print(type (string_int("6")))
+print (isinstance(string_int("6"), int))

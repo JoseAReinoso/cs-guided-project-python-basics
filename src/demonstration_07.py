@@ -13,4 +13,21 @@ Examples:
 """
 def nth_smallest(lst, n):
     # Your code here
+    if n > len(lst):
+        return None
+    #other way we could sort is sorted(lst), this it way creates a new list vs changing original
+    lst.sort()
+    return lst[n - 1]   
 
+# notes = 
+# you check if the length of the array is less than the number inputted, if it is return None. 
+# Then you sort the array
+# then simply return array, since arrays starts with 0 you have to add the -1 .
+
+      
+
+
+print(nth_smallest([7, 5, 3, 1], 1))
+print(nth_smallest([1, 3, 5, 7], 3))
+print(nth_smallest([1, 3, 5, 7], 5))
+print(nth_smallest([7, 3, 5, 1], 2))
